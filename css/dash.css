@@ -1,0 +1,121 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 18px;
+}
+
+.logout {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center; /* Center-align the welcome text */
+    margin-bottom: 20px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.task-item input[type="text"] {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.edit-button,
+.remove-button,
+.update-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+.edit-button:hover,
+.remove-button:hover,
+.update-button:hover {
+    background-color: #555;
+}
+
+.new-task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the input field and button */
+    margin-top: 20px;
+}
+
+.new-task-form input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5; /* Different color for input */
+    width: 80%;
+}
+
+.new-task-form input[type="text"]:focus {
+    outline: none;
+    background-color: #fff;
+}
+.new-task-form input[type="text"]::placeholder {
+    text-align: center;
+}
+
+.new-task-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Add margin-top to separate from the input field */
+}
